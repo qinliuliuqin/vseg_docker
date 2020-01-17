@@ -26,6 +26,11 @@ Usage: vseg_test \
        -n The name of the segmentation result to be saved. Type=string, default="seg.mha". \
        -g The gpu id to run model. Type=string, default='0'.
 
+The command can be:
+   ```shell
+   vseg_test -i ./test_data/test.mha -m ./model_1130_2019 -o ./results
+   ```
+
 
 Step 3: Test your own data
 
