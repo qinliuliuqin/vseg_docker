@@ -34,7 +34,7 @@ The test-folder which contains your test images is copying from your host machin
 After this step, you can close the new shell in your host machine.
 
 Second, run the command in your container: "vseg_test -i "./usr/seg/[test-folder]". The segmentation results will be saved in the folder "/usr/seg/results". 
-You can copy all the test results from the container to your host machine by running: "sodu docker cp [container-id]:/usr/seg/results ."
+You can copy all the test results from the container to your host machine by running: "sudo docker cp [container-id]:/usr/seg/results ."
 
 
 
