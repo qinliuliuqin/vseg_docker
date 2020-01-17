@@ -12,7 +12,7 @@ Run command: "sudo nvidia-docker run -it qinliu19/vseg_test:1.0 /bin/bash" to ge
 You will see the path: "root@[container-id]:/usr/seg#". Remember this container id because it will be used later.
 
 
-Step 2: Run test case in the image
+Step 2: Run test case in the docker image
 
 Run command: "vseg_test"
 By default, it will segment the test image "/usr/seg/test_data/org.mha", and save the segmentation result to the folder "/usr/seg/results/org".
