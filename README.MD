@@ -1,4 +1,4 @@
-This repository contains a general 3D segmentation engine for mandible and maxiall segmentation from CT/CBCT image.
+This repository contains a general 3D segmentation engine for mandible and midface segmentation from CT/CBCT image.
 As we only tested the code in linux (Ubuntu 18.04) OS, we highly recommend you to run it in the same OS.
 In addition to that, please install nvidia-docker first, and then, follow the steps listed below to get your segmentation results.
 
@@ -49,7 +49,12 @@ After this step, you can close the new shell in your host machine.
 Second, run the command in your container: "vseg_test -i "./usr/seg/[test-folder]". The segmentation results will be saved in the folder "/usr/seg/results". 
 You can copy all the test results from the container to your host machine by running: "sudo docker cp [container-id]:/usr/seg/results ."
 
+Step 4: Train your own data
 
+First, run the following command to get the help information of the training tool.
+   ```shell
+   vseg_train --help
+   ```
 
 
 
