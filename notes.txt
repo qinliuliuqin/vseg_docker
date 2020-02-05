@@ -1,1 +1,15 @@
-1. How to generate the docker image?
+1. How to install nvidia-docker?
+sudo apt-get install nvidia-docker2
+
+2. How to inspect the docker images?
+sudo docker images [OPTIONS] [REPOSITORY[:TAG]]
+
+3. How to inspect the docker containers?
+sudo docker container inspect [OPTIONS] CONTAINER [CONTAINER...]
+
+4. How to build the docker image from the docker file?
+sudo docker build -t qinliu19/vseg_test:2.0 .
+The repository name will be qinliu19/vseg_test and the tag will be 2.0
+
+5 How to push the built docker image to the docker hub?
+sudo docker push qinliu19/vseg_test:2.0
