@@ -14,7 +14,15 @@ You will see the path: "root@[container-id]:/usr/seg#". Remember this container 
 
 Step 2: Run test case in the docker image
 
-Run command: "vseg_test"
+Run the following command to learn how to use the test function:
+   ```shell
+   vseg_test --help
+   ```   
+Run the following command with no parameters: 
+   ```shell
+   vseg_test
+   ```   
+
 By default, it will segment the test image "/usr/seg/test_data/org.mha", and save the segmentation result to the folder "/usr/seg/results/org".
 The ground truth of the test image is "/usr/seg/test_data/gt.mha". 
 
