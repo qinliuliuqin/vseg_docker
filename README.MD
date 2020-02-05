@@ -18,7 +18,7 @@ Run the following command to learn how to use the test function:
    ```shell
    vseg_test --help
    ```   
-Run the following command with no parameters: 
+Run the following command with no parameters to segment the test case: 
    ```shell
    vseg_test
    ```   
