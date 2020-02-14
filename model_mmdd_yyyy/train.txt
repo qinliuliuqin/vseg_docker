@@ -1,0 +1,3 @@
+1
+/home/qinliu/projects/vseg_docker/data/org.mha
+/home/qinliu/projects/vseg_docker/data/gt.mha
