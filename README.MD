@@ -67,8 +67,8 @@ Step 4: Train your own model
       ```
       If you see the follwoing information, the two packages have been successfully installed.
       ```shell
-         usage: vseg_train [-h] [-i [INPUT]]
-            optional arguments:
+      usage: vseg_train [-h] [-i [INPUT]]
+        optional arguments:
               -h, --help                    show this help message and exit
               -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
       ```
