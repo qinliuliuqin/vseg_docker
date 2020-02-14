@@ -14,3 +14,4 @@ RUN alias python=/usr/bin/python3.7
 RUN pip3 install torch torchvision
 RUN pip3 install md-0.1-py3-none-any.whl
 RUN pip3 install md_segmentation3d-3.5-py3-none-any.whl
+RUN pip3 install nano
