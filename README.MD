@@ -51,24 +51,24 @@ You can copy all the test results from the container to your host machine by run
 
 Step 4: Train your own model
 1. install 'md' and 'md_segmentation3d' in your host machine
-Run the following code to copy the two packages from the container to your host machine and then install them.
-   ```shell
-   sudo docker cp [container-id]:/usr/seg/md-0.1-py3-none-any.whl .
-   sudo docker cp [container-id]:/usr/seg/md_segmentation3d-3.5-py3-none-any.whl .
-   pip install ./md-0.1-py3-none-any.whl
-   pip install ./md_segmentation3d-3.5-py3-none-any.whl
-   ```
-Run the following code to make sure the packages have been successfully installed.
-   ```shell
-   vseg_train --help
-   ```
-If you see the follwoing information, the two packages have been successfully installed.
-   ```shell
-   usage: vseg_train [-h] [-i [INPUT]]
-   optional arguments:
-     -h, --help                    show this help message and exit
-     -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
-   ```
+   a. Run the following code to copy the two packages from the container to your host machine and then install them.
+      ```shell
+      sudo docker cp [container-id]:/usr/seg/md-0.1-py3-none-any.whl .
+      sudo docker cp [container-id]:/usr/seg/md_segmentation3d-3.5-py3-none-any.whl .
+      pip install ./md-0.1-py3-none-any.whl
+      pip install ./md_segmentation3d-3.5-py3-none-any.whl
+      ```
+   b. Run the following code to make sure the packages have been successfully installed.
+      ```shell
+      vseg_train --help
+      ```
+      If you see the follwoing information, the two packages have been successfully installed.
+         ```shell
+         usage: vseg_train [-h] [-i [INPUT]]
+         optional arguments:
+           -h, --help                    show this help message and exit
+           -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
+         ```
 
 2. clone the project 'vseg_docker' and get into the folder.
    ```shell
