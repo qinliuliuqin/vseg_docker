@@ -55,6 +55,16 @@ First, run the following command to get the help information of the training too
    ```shell
    vseg_train --help
    ```
+You will see:
+   ```shell
+   usage: vseg_train [-h] [-i [INPUT]]
+   optional arguments:
+     -h, --help                    show this help message and exit
+     -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
+   ```
+
+
+
 
 
 
