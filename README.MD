@@ -55,6 +55,7 @@ Step 4: Train your own model
 
    a. Run the following code to copy the two packages from the container to your host machine and then install them.
       ```shell
+      cd /your-folder
       sudo docker cp [container-id]:/usr/seg/md-0.1-py3-none-any.whl .
       sudo docker cp [container-id]:/usr/seg/md_segmentation3d-3.5-py3-none-any.whl .
       pip install ./md-0.1-py3-none-any.whl
@@ -106,7 +107,9 @@ Step 4: Train your own model
 5. train the coarse and fine models seperately on a your own data.
 
    a. copy your training data to the folder '/your-folder/vseg_docker/data' 
+   
    b. update the 'train.txt'.
+   
    c. run the training code above.
 
 
