@@ -66,12 +66,12 @@ Step 4: Train your own model
       vseg_train --help
       ```
       If you see the follwoing information, the two packages have been successfully installed.
-         ```shell
+      ```shell
          usage: vseg_train [-h] [-i [INPUT]]
-         optional arguments:
-           -h, --help                    show this help message and exit
-           -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
-         ```
+            optional arguments:
+              -h, --help                    show this help message and exit
+              -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
+      ```
 
 2. clone the project 'vseg_docker' and get into the folder.
    ```shell
