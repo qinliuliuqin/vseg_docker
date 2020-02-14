@@ -50,7 +50,9 @@ Second, run the command in your container: "vseg_test -i "./usr/seg/[test-folder
 You can copy all the test results from the container to your host machine by running: "sudo docker cp [container-id]:/usr/seg/results ."
 
 Step 4: Train your own model
+
 1. install 'md' and 'md_segmentation3d' in your host machine
+
    a. Run the following code to copy the two packages from the container to your host machine and then install them.
       ```shell
       sudo docker cp [container-id]:/usr/seg/md-0.1-py3-none-any.whl .
@@ -77,6 +79,7 @@ Step 4: Train your own model
    ```
 
 3. modify the correct path in the follwoing files: 'config_coarse.py', 'config_fine.py', 'train.txt'
+
    a. modify the configuration files to be like this:
    ```shell
    # image-segmentation pair list
@@ -101,6 +104,7 @@ Step 4: Train your own model
    ```
    
 5. train the coarse and fine models seperately on a your own data.
+
    a. copy your training data to the folder '/your-folder/vseg_docker/data' 
    b. update the 'train.txt'.
    c. run the training code above.
