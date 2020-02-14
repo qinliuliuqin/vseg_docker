@@ -8,7 +8,7 @@ sudo docker images [OPTIONS] [REPOSITORY[:TAG]]
 sudo docker container inspect [OPTIONS] CONTAINER [CONTAINER...]
 
 4. How to build the docker image from the docker file?
-sudo docker build -t qinliu19/vseg_test:2.0 .
+sudo nvidia-docker build -t qinliu19/vseg_test:2.0 .
 The repository name will be qinliu19/vseg_test and the tag will be 2.0
 
 5 How to push the built docker image to the docker hub?
