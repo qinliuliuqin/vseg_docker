@@ -77,7 +77,7 @@ If you see the follwoing information, the two packages have been successfully in
    ```
 
 3. modify the correct path in the follwoing files: 'config_coarse.py', 'config_fine.py', 'train.txt'
-   suppose your 
+   a. modify the configuration files to be like this:
    ```shell
    # image-segmentation pair list
    # 1) single-modality image training, use txt annotation file
@@ -86,6 +86,12 @@ If you see the follwoing information, the two packages have been successfully in
 
    # the output of training models and logs
    __C.general.save_dir = '/your-folder/vseg_docker/model_mmdd_yyyy/coarse'
+   ```
+   b. modify the training path file to be like this:
+   ```shell
+   1
+   /your-folder/vseg_docker/data/org.mha
+   /your-folder/vseg_docker/data/gt.mha
    ```
 
 4. train the coarse and fine models seperately on a test data.
