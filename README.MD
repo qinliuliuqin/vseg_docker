@@ -94,7 +94,7 @@ Step 4: Train your own model
    /your-folder/vseg_docker/data/gt.mha
    ```
 
-4. train the coarse and fine models seperately on a test data.
+4. train the coarse and fine models seperately on the given test data.
    ```shell
    vseg_train -i /your-folder/vseg_docker/model_mmdd_yyyy/config_coarse.py
    vseg_train -i /your-folder/vseg_docker/model_mmdd_yyyy/config_fine.py   
