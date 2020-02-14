@@ -70,10 +70,36 @@ If you see the follwoing information, the two packages have been successfully in
      -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
    ```
 
-2. copy the model 'model_1130_2019' from the container to your host machine.
+2. clone the project 'vseg_docker' and get into the folder.
    ```shell
-   sudo docker cp [container-id]:/usr/seg/model_1130_2019 .
+   git clone https://github.com/qinliuliuqin/vseg_docker.git
+   cd /your-folder/vseg_docker
    ```
+
+3. modify the correct path in the follwoing files: 'config_coarse.py', 'config_fine.py', 'train.txt'
+   suppose your 
+   ```shell
+   # image-segmentation pair list
+   # 1) single-modality image training, use txt annotation file
+   # 2) multi-modality image training, use csv annotation file
+   __C.general.imseg_list = '/your-folder/vseg_docker/model_mmdd_yyyy/train.txt'
+
+   # the output of training models and logs
+   __C.general.save_dir = '/your-folder/vseg_docker/model_mmdd_yyyy/coarse'
+   ```
+
+4. train the coarse and fine models seperately on a test data.
+   ```shell
+   vseg_train -i /your-folder/vseg_docker/model_mmdd_yyyy/config_coarse.py
+   vseg_train -i /your-folder/vseg_docker/model_mmdd_yyyy/config_fine.py   
+   ```
+   
+5. train the coarse and fine models seperately on a your own data.
+   a. copy your training data to the folder '/your-folder/vseg_docker/data' 
+   b. update the 'train.txt'.
+   c. run the training code above.
+
+
 
 
 
