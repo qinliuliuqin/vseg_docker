@@ -49,13 +49,20 @@ After this step, you can close the new shell in your host machine.
 Second, run the command in your container: "vseg_test -i "./usr/seg/[test-folder]". The segmentation results will be saved in the folder "/usr/seg/results". 
 You can copy all the test results from the container to your host machine by running: "sudo docker cp [container-id]:/usr/seg/results ."
 
-Step 4: Train your own data
-
-First, run the following command to get the help information of the training tool.
+Step 4: Train your own model
+1. install 'md' and 'md_segmentation3d' in your host machine
+Run the following code to copy the two packages from the container to your host machine and then install them.
+   ```shell
+   sudo docker cp [container-id]:/usr/seg/md-0.1-py3-none-any.whl .
+   sudo docker cp [container-id]:/usr/seg/md_segmentation3d-3.5-py3-none-any.whl .
+   pip install ./md-0.1-py3-none-any.whl
+   pip install ./md_segmentation3d-3.5-py3-none-any.whl
+   ```
+Run the following code to make sure the packages have been successfully installed.
    ```shell
    vseg_train --help
    ```
-You will see:
+If you see the follwoing information, the two packages have been successfully installed.
    ```shell
    usage: vseg_train [-h] [-i [INPUT]]
    optional arguments:
@@ -63,6 +70,10 @@ You will see:
      -i [INPUT], --input [INPUT]   volumetric segmentation3d train config file  
    ```
 
+2. copy the model 'model_1130_2019' from the container to your host machine.
+   ```shell
+   sudo docker cp [container-id]:/usr/seg/model_1130_2019 .
+   ```
 
 
 
