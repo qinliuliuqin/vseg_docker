@@ -1,3 +1,7 @@
-1
-/home/qinliu/projects/vseg_docker/data/org.mha
-/home/qinliu/projects/vseg_docker/data/gt.mha
+3
+/home/qinliu/projects/vseg_docker/data/org_1.mha
+/home/qinliu/projects/vseg_docker/data/gt_1.mha
+/home/qinliu/projects/vseg_docker/data/org_2.mha
+/home/qinliu/projects/vseg_docker/data/gt_2.mha
+/home/qinliu/projects/vseg_docker/data/org_3.mha
+/home/qinliu/projects/vseg_docker/data/gt_3.mha
