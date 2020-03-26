@@ -11,7 +11,6 @@ sudo docker container inspect [OPTIONS] CONTAINER [CONTAINER...]
 sudo nvidia-docker build -t qinliu19/vseg_test:2.0 .
 If there are DNS error:
 sudo nvidia-docker --network=host build -t qinliu19/vseg_test:2.0
-
 The repository name will be qinliu19/vseg_test and the tag will be 2.0
 
 5 How to push the built docker image to the docker hub?
